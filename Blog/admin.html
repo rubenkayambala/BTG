@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="dstyle.css">
+    <title>Braves Man TG | Blog | Admin</title>
+</head>
+<body>
+    <div class="process" id="process" style="display: none;">
+        <a href="#" class="fermer"><i class="bi bi-x"></i></a>
+        <div class="content">
+            <h2>Vous nous contactez en tant que :</h2>
+            <div>
+                <button id="personnelBtn">Personnel</button>
+                <button id="entrepriseBtn">Entreprise</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper" id="personnelForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Votre nom, post-nom et prénom">
+                    <label for="name">Nom complet</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="adresse" id="adresse" required placeholder="Votre résidence">
+                    <label for="adresse">Adresse actuelle</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Votre adresse mail">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="num" id="num" required placeholder="Votre numéro de téléphone">
+                    <label for="num">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrit" id="descrit"></textarea>
+                    <label for="descrit">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="wrapper1" id="entrepriseForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="entrepriseformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Nom de l'entreprise">
+                    <label for="name">Entreprise</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Adresse mail de l'entreprise">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="numE" id="numE" required placeholder="Numéro de téléphone">
+                    <label for="numE">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrite" id="descrite"></textarea>
+                    <label for="descrite">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div> 
+
+    <div class="accueil">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <a href="../index.html"><img src="../asset/images/brave_man_logo2.png" class="logo" alt="Logo de Brave Man TG" width="90px"></a>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html#home">Accueil</a></li>
+                    <li><a href="../Missions/mission.html">Mission</a></li>
+                    <li><a href="../Services/services.html">Services</a></li>
+                    <li><a href="../Blog/blog.html">Blog</a></li>
+                    <li><a href="../About/About.html">A propos</a></li>
+                    <div class="cache" id="search">
+                        <li><input type="search" placeholder="Tapez votre recherche..."></li>
+                    </div>
+                    <li>
+                        <a id="Btnsearch" style="color: #fff; background-color: #ff5e00; padding: 8px 12px; border-radius: 50%;" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li><a class="contact" href="#" id="btnJoin">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="banner fade-in" style="text-align: center;">
+                    <h1 style="color: #ff5e00;" class="typing">Admin</h1>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <section class="adm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 d-flex justify-content-center mb-3">
+                    <div class="form-box">
+                        <h4>Formulaire de publication</h4>
+                        <div class="input-box">
+                            <label for="title">Titre</label>
+                            <input type="text" name="title" id="title" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="image">Image</label>
+                            <input type="file" name="image" id="image">
+                        </div>
+                        <div class="input-box">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" required></textarea>
+                        </div>
+                        <button type="submit">Publier</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dashboard" style="text-align: center;">
+                        <div>
+                            <p><i class="bi bi-person-circle"></i></p>
+                        </div>
+                        <div>
+                            <h4>Nom : nom de l'admin</h4>
+                        </div>
+                        <button>Se deconnecter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="texth1 d-flex">
+                        <h1>Braves Man TG</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="link d-flex justify-content-center">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Accueil</li>
+                            <li>A propos</li>
+                            <li>Missions</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Cercle BRaves MAn Coorporation</li>
+                            <li>KuMeTU</li>
+                            <li>ALLYNEC</li>
+                            <li>NEVER GIVE UP Center</li>
+                            <li>Get Skills Class</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Profil</li>
+                            <li>My account</li>
+                            <li>Preferences</li>
+                            <li>Purchase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Catalogue</li>
+                            <li>Metier Technicien Informatique</li>
+                            <li>Parcous en Réseaux</li>
+                            <li>Parcours en Programmation</li>
+                            <li>Parcours en Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #012641; box-shadow: 0 0 2px #09052b; padding: 0; margin: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-start">
+                            <p>Copyright&copy; 2024 Braves Man TG. <span style="color: #c9c9c9;">Tout drois réservés</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-end">
+                            <a href="#" style="text-decoration: none; color: #fff;">
+                                Politique de confidentialité & Condition générales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../asset/script.js"></script>
+</body>
+</html>

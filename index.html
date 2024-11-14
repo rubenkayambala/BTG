@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Lobster&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="asset/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Braves Man TG | Accueil</title>
+</head>
+<div class="process" id="process" style="display: none;">
+    <a href="#" class="fermer"><i class="bi bi-x"></i></a>
+    <div class="content">
+        <h2>Vous nous contactez en tant que :</h2>
+        <div>
+            <button id="personnelBtn">Personnel</button>
+            <button id="entrepriseBtn">Entreprise</button>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper" id="personnelForm" style="display: none;">
+    <div class="form-box" id="myForm">
+        <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+            <i class="bi bi-x"></i>
+        </div>
+        <h2>Remplissez ce formulaire</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="name" id="name" required placeholder="Votre nom, post-nom et prénom">
+                <label for="name">Nom complet</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="adresse" id="adresse" required placeholder="Votre résidence">
+                <label for="adresse">Adresse actuelle</label>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" id="email" required placeholder="Votre adresse mail">
+                <label for="email">Adresse Email</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="num" id="num" required placeholder="Votre numéro de téléphone">
+                <label for="num">Téléphone</label>
+            </div>
+            <div class="input-box">
+                <textarea name="descrit" id="descrit"></textarea>
+                <label for="descrit">Décrivez votre demande</label>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+<div class="wrapper1" id="entrepriseForm" style="display: none;">
+    <div class="form-box" id="myForm">
+        <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+            <i class="bi bi-x"></i>
+        </div>
+        <h2>Remplissez ce formulaire</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="name" id="name" required placeholder="Nom de l'entreprise">
+                <label for="name">Entreprise</label>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" id="email" required placeholder="Adresse mail de l'entreprise">
+                <label for="email">Adresse Email</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="numE" id="numE" required placeholder="Numéro de téléphone">
+                <label for="numE">Téléphone</label>
+            </div>
+            <div class="input-box">
+                <textarea name="descrite" id="descrite"></textarea>
+                <label for="descrite">Décrivez votre demande</label>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+</div>  
+<body>
+    <div class="accueil" id="home">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <a href="index.html"><img src="asset/images/brave_man_logo2.png" class="logo" alt="Logo de Brave Man TG" width="90px"></a>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="Missions/mission.html">Mission</a></li>
+                    <li><a href="Services/services.html">Services</a></li>
+                    <li><a href="solutions/solution.html">Nos solutions</a></li>
+                    <li><a href="Blog/blog.html">Blog</a></li>
+                    <li><a href="About/About.html">A propos</a></li>
+                    <div class="cache" id="search">
+                        <li><input type="search" placeholder="Tapez votre recherche..."></li>
+                    </div>
+                    <li>
+                        <a id="Btnsearch" style="color: #fff; background-color: #ff5e00; padding: 8px 12px; border-radius: 50%;" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li><a class="contact" href="#" id="btnJoin">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="banner fade-in" style="text-align: center;">
+                    <h1>Braves Man TG</h1>
+                    <p class="typing">
+                        <a style="color: #fff; text-decoration: none;" href="#" id="searchBtn">
+                            "Analyse, Recherche, Enseignement et <br> Résolution de Problèmes"
+                        </a>
+                    </p>
+                    <div>
+                        <div class="hidden" id="searchInput">
+                            <input type="text" placeholder="Tapez votre recherche...">
+                            <button type="submit"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    <p class="floating">Facilitons ensemble votre succès</p>
+                    <a class="btn1" href="#contact">Contacter</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="asset/images/BRAVE MAN4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <p>
+                            <strong style="color: #0051ff;">BRAVES MAN TG</strong> a été fondée le 24 Mai 2024 par 
+                            <a href="https://www.linkedin.com/in/ruben-kayambala-b2b54615b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4FTlg7uESPGWPV43o%2FFDXw%3D%3D">
+                            Ruben KAYAMBALA <i class="bi bi-link-45deg"></i></a>, 
+                            qui est également son premier employé. Depuis sa création, l'entreprise s'est 
+                            affirmée comme un acteur clé dans l'analyse, la recherche, l'enseignement et la 
+                            résolution de problèmes complexes.
+                        </p>
+                        <p>
+                            <strong style="color: #0051ff;">BRAVES MAN TG</strong> est une entreprise d'assistance dédiée à fournir 
+                            des solutions aux problèmes rencontrés par les individus et les entreprises. Nous 
+                            offrons des solutions directes quand elles sont réalisables, et collaborons avec 
+                            des entreprises qualifiées pour résoudre des problèmes complexes, quels que soient 
+                            le domaine ou le secteur.
+                        </p>
+                        <a class="ensavoir" href="About/About.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special">
+        <div class="container">
+            <p>
+                <strong>BRAVES MAN TG</strong> est spécialisée dans l'analyse, la recherche, l'enseignement
+                et la résolution de problèmes complexes. Notre mission est de fournir des 
+                solutions innovantes et stratégiques qui permettent à nos clients de surmonter 
+                les défis qu'ils rencontrent, qu'ils soient opérationnels, techniques ou 
+                managériaux.
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="asset/images/Data.jpg" alt="" width="100%" style="border-radius: 10px;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content">
+                        <div class="approche" data-aos="fade-up" data-aos-duration="2000">
+                            <h4>Notre approche</h4>
+                            <p>
+                                Nous adoptons une méthode rigoureuse en utilisant les dernières technologies 
+                                et méthodologies pour analyser les données et les situations. Cela nous permet 
+                                de proposer des recommandations pertinentes et des solutions pratiques, adaptées 
+                                aux besoins spécifiques de chaque client.
+                            </p>
+                        </div>
+                        <div class="engagement">
+                            <h4>Nos engagements</h4>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="boxEngage" data-aos="fade-up" data-aos-duration="3000">
+                                        <h6>Création de valeur ajoutée : </h6>
+                                        <p>
+                                            Nous développons des stratégies basées sur une 
+                                            compréhension approfondie du marché et des 
+                                            objectifs de nos partenaires. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="boxEngage" data-aos="fade-up" data-aos-duration="3000">
+                                        <h6>Collaboration étroite : </h6>
+                                        <p>
+                                            Nos experts multidisciplinaires travaillent 
+                                            étroitement avec nos clients pour comprendre 
+                                            leurs priorités, identifier leurs leviers de 
+                                            croissance et les accompagner dans la mise en 
+                                            œuvre des solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="boxEngage" data-aos="fade-up" data-aos-duration="3000">
+                                        <h6>Partenaire de confiance : </h6>
+                                        <p>
+                                            Nous nous engageons à fournir des résultats concrets 
+                                            et mesurables, tout en favorisant une relation de 
+                                            confiance basée sur l'écoute, la transparence et 
+                                            l'intégrité.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vision">
+        <div class="container">
+            <h1>Philosophie et Vision</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-right" data-aos-duration="1000">
+                        <p>
+                            Chez <strong>BRAVES MAN TG</strong>, chaque défi est une opportunité 
+                            d'innover et de proposer des solutions uniques. Nous plaçons 
+                            l'évolution et la formation continue au cœur de notre stratégie, 
+                            pour garantir que nous restons à la pointe des développements dans 
+                            nos domaines d'expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-left" data-aos-duration="1000">
+                        <p>
+                            Notre engagement ne s'arrête pas à la simple livraison de solutions. 
+                            Nous nous impliquons activement dans le suivi et l'accompagnement post-projet, 
+                            assurant ainsi une mise en œuvre efficace et une adaptation continue aux 
+                            changements potentiels.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-right" data-aos-duration="2000">
+                        <h5>Notre vision :</h5>
+                        <p>
+                            Nous aspirons à devenir un acteur incontournable dans la transformation de nos 
+                            clients, en les aidant à résoudre leurs problèmes immédiats tout en les préparant 
+                            aux défis futurs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div data-aos="zoom-in-left" data-aos-duration="2000">
+                        <h5>Objectif à long terme :</h5>
+                        <p>
+                            <strong>BRAVES MAN TG</strong> vise à devenir un partenaire indispensable pour ses clients, en 
+                            contribuant activement à leur croissance et à leur succès, tout en maintenant des 
+                            relations basées sur la confiance, le professionnalisme et la quête constante 
+                            d'excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="promo-content">
+                      <h2>Découvrez Nos Solutions innovantes</h2>
+                      <p>Des solutions innovantes pour votre entreprise.</p>
+                      <a href="solutions/solution.html" class="promo-btn">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="promo-images">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="imagescontent">
+                                    <img src="asset/images/img2.jpg" alt="Service 1">
+                                    <div class="overlay">
+                                        <img class="logo" src="asset/images/LOGO (2).png" alt="" style="max-width: 200px;">
+                                    </div>
+                                </div>
+                                <h5><strong>ALLYNEC</strong></h5>
+                                <p>
+                                    (All You Need Center)
+                                    Solution Integrée pour les entreprise
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="imagescontent">
+                                    <img src="asset/images/img3.jpg" alt="Service 2" style="height: 179.5px;">
+                                    <div class="overlay">
+                                        <img class="logo" src="asset/images/logo_GetSkillsClass.png" alt="" style="max-width: 100px;">
+                                    </div>
+                                </div>
+                                <h5><strong>GET SKILLS CLASS</strong></h5>
+                                <p>
+                                    Programme éducatif professionnel
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="imagescontent">
+                                    <img src="asset/images/img4.jpg" alt="Service 3">
+                                    <div class="overlay">
+                                        <img class="logo" src="asset/images/Logo_KwataBoot.png" alt="" style="max-width: 100px;">
+                                    </div>
+                                </div>
+                                <h5><strong>KWATA BOOT</strong></h5>
+                                <p>
+                                    Logiciel de surveillance d'évaluation en ligne
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mission" id="mission">
+        <div class="container">
+            <h1>Mission</h1>
+            <p>
+                "<strong>BRAVES MAN TG</strong> s'engage à fournir des solutions novatrices et 
+                des analyses approfondies pour permettre à nos clients d'atteindre 
+                leurs objectifs stratégiques."
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h5>Compréhension des Besoins du Client :</h5>
+                        <p>
+                            La première étape consiste à s'immerger dans le contexte du client pour 
+                            comprendre ses objectifs, ses défis et les contraintes auxquelles il est 
+                            confronté. À ce stade, <strong>BRAVES MAN TG</strong> collecte des données pertinentes et 
+                            organise des sessions de diagnostic avec les parties prenantes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h5>Analyse et Recherche :</h5>
+                        <p>
+                            Une fois les besoins identifiés, <strong>BRAVES MAN TG</strong> entreprend une analyse rigoureuse. 
+                            Cela inclut l'évaluation des données existantes, la recherche de tendances et 
+                            l'utilisation d'outils analytiques avancés pour obtenir des insights stratégiques.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h5>Proposition de Solutions Innovantes :</h5>
+                        <p>
+                            Sur la base de l'analyse, l'équipe propose des solutions créatives et personnalisées, 
+                            adaptées aux problématiques spécifiques du client. Ces solutions peuvent inclure 
+                            des recommandations stratégiques, des ajustements opérationnels ou des innovations 
+                            technologiques.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h5>Mise en Œuvre Collaborative :</h5>
+                        <p>
+                            Nous mettons l'accent sur une mise en œuvre collaborative, où <strong>BRAVES MAN TG</strong> travaille 
+                            main dans la main avec le client pour déployer les solutions proposées. Cette phase 
+                            inclut la planification, le soutien technique, la formation et l'accompagnement à 
+                            chaque étape.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h5>Suivi et Évaluation :</h5>
+                        <p>
+                            Après la mise en œuvre, un suivi rigoureux est réalisé pour évaluer les résultats, 
+                            mesurer l'efficacité des solutions et ajuster les actions si nécessaires. <strong>BRAVES MAN TG  </strong>
+                            continue d'accompagner ses clients pour garantir une amélioration continue et une 
+                            optimisation des processus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h1>Nos services</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <p class="icon"><i class="bi bi-graph-up"></i></p>
+                        <div class="text">
+                            <h5>Analyse et Recherche</h5>
+                            <p>
+                                <strong>BRAVES MAN TG</strong> adopte une approche rigoureuse 
+                                pour analyser les problèmes complexes à travers 
+                                des outils d'analyse avancés.
+                            </p>
+                            <a href="Formulaire de sollicitation/form.html">Solliciter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <p class="icon"><i class="bi bi-easel"></i></p>
+                        <div class="text">
+                            <h5>Enseignement</h5>
+                            <p>
+                                Nos programmes de formation sur mesure sont conçus 
+                                pour répondre aux besoins spécifiques des entreprises 
+                                ou des individus.
+                            </p>
+                            <a href="Formulaire de sollicitation/form.html">Solliciter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <p class="icon"><i class="bi bi-shield-check"></i></p>
+                        <div class="text">
+                            <h5>Résolution des problèmes</h5>
+                            <p>
+                                Nous proposons des solutions sur mesure pour chaque défi, 
+                                garantissant une transition en douceur et l'atteinte des 
+                                résultats.
+                            </p>
+                            <a href="Formulaire de sollicitation/form.html">Solliciter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="imagesdefond">
+        <div class="container">
+            <div style="max-width: 100%;">
+                <div id="text" class="d-flex justify-content-center">
+                    <h1 class="">"Votre succès est notre mission - <span>Braves Man TG</span>, <br> votre partenaire de confiance."</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center" style="width: 100%;" data-aos="zoom-in-up">
+                        <div class="contactForm">
+                            <h6>Envoyez nous un message</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="name" id="name" placeholder="Votre nom">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="first" id="first" placeholder="Votre prénom">
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <input type="email" name="email" id="email" placeholder="Votre adresse mail">
+                            </div>
+                            <div class="inputbox">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center" style="width: 100%;" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="coordonneediv">
+                            <h6>Nos coordonées</h6>
+                            <div class="coordons">
+                                <p><i class="bi bi-envelope-fill"></i> contact@bravesmantg.org</p>
+                                <p><i class="bi bi-telephone-fill"></i> +243 854666188</p>
+                                <p><i class="bi bi-geo-alt-fill"></i> Adresse Braves Man TG</p>
+                            </div>
+                            <div class="links d-flex justify-content-center">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="texth1 d-flex">
+                        <h1>Braves Man TG</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="link d-flex justify-content-center">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Accueil</li>
+                            <li>A propos</li>
+                            <li>Missions</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Cercle BRaves MAn Coorporation</li>
+                            <li>KuMeTU</li>
+                            <li>ALLYNEC</li>
+                            <li>NEVER GIVE UP Center</li>
+                            <li>Get Skills Class</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Profil</li>
+                            <li>My account</li>
+                            <li>Preferences</li>
+                            <li>Purchase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Catalogue</li>
+                            <li>Metier Technicien Informatique</li>
+                            <li>Parcous en Réseaux</li>
+                            <li>Parcours en Programmation</li>
+                            <li>Parcours en Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #012641; box-shadow: 0 0 2px #09052b; padding: 0; margin: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-start">
+                            <p>Copyright&copy; 2024 Braves Man TG. <span style="color: #c9c9c9;">Tout drois réservés</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-end">
+                            <a href="#" style="text-decoration: none; color: #fff;">
+                                Politique de confidentialité & Condition générales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="asset/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+
+.navbar{
+    width: 100%;
+    max-width: 100vw;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar .contact{
+    text-decoration: none;
+    background-color: #ff5e00;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.navbar .contact:hover{
+    background-color: #e75500;
+}
+
+.accueil{
+    background-image: url(../asset/images/Back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #011d31d5;
+}
+
+.accueil .container{
+    padding: 20px 0;
+}
+
+.accueil .container .banner{
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #aaaaaa;
+    padding: 40px;
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 4px;
+    max-width: 99vw;
+    overflow: hidden;
+}
+
+.accueil .container .banner.fade-in{
+    opacity: 0;
+    animation: fadeInAnimation 4s forwards;
+}
+
+@keyframes fadeInAnimation{
+    to{
+        opacity: 1;
+    }
+}
+
+.container{
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Gestion des formulaires */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.dashboard > div{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard > div button{
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: #011d31;
+    color: #fff;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+.dashboard > div a{
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: #011d31;
+    color: #fff;
+    padding: 8px 15px;
+}
+
+h2, h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #011d31;
+}
+
+h5{
+    color: #ff5e00;
+}
+
+/* Gestion des affichages */
+.content{
+    background-color: #ff5e00;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h4{
+    color: #fff;
+}
+
+.content .sollicitation{
+    background-color: #ffffffc4; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 10px;
+}
+
+.content .sollicitation h6{
+    font-size: 14px;
+}
+
+.content .sollicitation p{
+    font-size: 10px;
+}
+
+.content .sollicitation button{
+    border: none;
+    border-radius: 3px;
+    background-color: #011d31;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+/* Gestion du profil de l'admin */
+.dashboar{
+    background-color: #011d31;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboar p i{
+    font-size: 60px;
+}
+
+.dashboar button{
+    border: none;
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    background-color: #ff5e00;
+    color: #fff;
+    border-radius: 3px;
+}
+
+footer{
+    background-color: #011d31;
+    color: #fff;
+}
+
+footer .container{
+    padding: 30px 0;
+}
+
+footer .container div ul{
+    list-style: none;
+}
+
+footer .container div ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+footer .container .link ul li{
+    margin: 5px;
+}
+
+footer .container .link ul li a{
+    background-color: #ff5e00;
+    font-size: 20px;
+    padding: 7px 12px;
+    border-radius: 50%;
+}
+
+footer .container .link ul li a i {
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar{
+        padding: 0 20px;
+    }
+    .navbar .logo{
+        width: 60px;
+    }
+    .navbar .contact{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 6px 12px;
+    }
+}

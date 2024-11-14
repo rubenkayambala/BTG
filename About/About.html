@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="../asset/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Braves Man TG | A propos</title>
+</head>
+<body>
+    <div class="process" id="process" style="display: none;">
+        <a href="#" class="fermer"><i class="bi bi-x"></i></a>
+        <div class="content">
+            <h2>Vous nous contactez en tant que :</h2>
+            <div>
+                <button id="personnelBtn">Personnel</button>
+                <button id="entrepriseBtn">Entreprise</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper" id="personnelForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Votre nom, post-nom et prénom">
+                    <label for="name">Nom complet</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="adresse" id="adresse" required placeholder="Votre résidence">
+                    <label for="adresse">Adresse actuelle</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Votre adresse mail">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="num" id="num" required placeholder="Votre numéro de téléphone">
+                    <label for="num">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrit" id="descrit"></textarea>
+                    <label for="descrit">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="wrapper1" id="entrepriseForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="entrepriseformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Nom de l'entreprise">
+                    <label for="name">Entreprise</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Adresse mail de l'entreprise">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="numE" id="numE" required placeholder="Numéro de téléphone">
+                    <label for="numE">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrite" id="descrite"></textarea>
+                    <label for="descrite">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div> 
+    <div class="accueil">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <a href="../index.html"><img src="../asset/images/brave_man_logo2.png" class="logo" alt="Logo de Brave Man TG" width="90px"></a>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html#home">Accueil</a></li>
+                    <li><a href="../Missions/mission.html">Mission</a></li>
+                    <li><a href="../Services/services.html">Services</a></li>
+                    <li><a href="../solutions/solution.html">Nos solutions</a></li>
+                    <li><a href="../Blog/blog.html">Blog</a></li>
+                    <li><a href="../About/About.html">A propos</a></li>
+                    <div class="cache" id="search">
+                        <li><input type="search" placeholder="Tapez votre recherche..."></li>
+                    </div>
+                    <li>
+                        <a id="Btnsearch" style="color: #fff; background-color: #ff5e00; padding: 8px 12px; border-radius: 50%;" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li><a class="contact" href="#" id="btnJoin">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="banner fade-in" style="text-align: center;">
+                    <h1>A propos de Braves Man TG</h1>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <section class="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content d-flex justify-content-center" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="../asset/images/BRAVE MAN4.png" alt="" width="300px">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text" data-aos="fade-up" data-aos-duration="2000">
+                        <p>
+                            <strong>BRAVES MAN TG</strong> est une entreprise d'assistance dédiée à fournir 
+                            des solutions aux problèmes rencontrés par les individus et les 
+                            entreprises. Nous offrons des solutions directes quand elles 
+                            sont réalisables, et collaborons avec des entreprises qualifiées 
+                            pour résoudre des problèmes complexes, quels que soient le 
+                            domaine ou le secteur. <br><br>
+                            En tant qu'intermédiaire, nous facilitons le contact et la 
+                            communication entre ceux qui rencontrent des difficultés et les 
+                            experts capables d'apporter des solutions appropriées. Grâce à 
+                            notre expertise en recherche et analyse, nous proposons des 
+                            solutions après une étude approfondie menée par nos experts. <br><br>
+                            Nous intervenons aussi bien dans des environnements privés que 
+                            professionnels, en surmontant les défis spécifiques à chaque 
+                            écosystème. Nos interventions visent à résoudre des obstacles 
+                            environnementaux, économiques ou structurels, en apportant des 
+                            solutions concrètes et mesurables. <br><br>
+                            <strong>BRAVES MAN TG</strong> organise régulièrement des événements et des 
+                            formations pour réduire les inégalités et surmonter les défis 
+                            dans divers domaines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="historique">
+        <div class="container">
+            <h3 style="text-align: center; margin-bottom: 20px;">Brève historique de Braves Man TG</h3>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                    <div class="imagecontent d-flex justify-content-center" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <p style="font-size: 100px; color: #ff5e00;"><i class="bi bi-book"></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text" data-aos="fade-up" data-aos-duration="2000">
+                        <p>
+                            <strong>BRAVES MAN TG</strong> a été fondée le 24 Mai 2024 par 
+                            <a href="https://www.linkedin.com/in/ruben-kayambala-b2b54615b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4FTlg7uESPGWPV43o%2FFDXw%3D%3D">
+                                Ruben KAYAMBALA <i class="bi bi-link-45deg"></i></a>, qui est également son premier employé. Depuis sa création, l'entreprise s'est 
+                            affirmée comme un acteur clé dans l'analyse, la recherche, l'enseignement 
+                            et la résolution de problèmes complexes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="visions">
+                <h3>Vision</h3>
+                <p class="mot">
+                    "Devenir un leader reconnu dans le domaine de la recherche, du conseil 
+                    et de l'enseignement, en établissant de nouveaux standards dans l'industrie."
+                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="vision" data-aos="zoom-in-right" data-aos-duration="1000">
+                            <p>
+                                <strong>Fondation et Vision Initiale :</strong> BRAVES MAN TG a été fondée avec une vision claire : 
+                                devenir une entreprise de référence dans l'analyse, la recherche et la résolution 
+                                de problèmes complexes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="vision" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <p>
+                                <strong>Expansion des Services :</strong> Au fil des années, BRAVES MAN TG a élargi son champ d'action 
+                                en développant de nouveaux services, notamment l'enseignement et la formation 
+                                professionnelle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="vision" data-aos="zoom-in-right" data-aos-duration="1000">
+                            <p>
+                                <strong>Diversification :</strong> BRAVES MAN TG a pris la décision stratégique de se diversifier dans 
+                                différents secteurs pour répondre à une large gamme de besoins.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="vision" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <p>
+                                <strong>Innovation et Développement Durable :</strong> BRAVES MAN TG investit dans la recherche et le 
+                                développement pour rester à la pointe des innovations technologiques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="valeurs">
+                <h3>Valeurs</h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="valeur" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <p>
+                                <strong>Innovation :</strong> Recherche de solutions créatives. Nous repoussons les limites pour offrir 
+                                des solutions adaptées aux défis complexes de nos clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="valeur" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <p>
+                                <strong>Excellence :</strong> Livrer des services de haute qualité. Notre engagement envers l'excellence 
+                                garantit que chaque service fourni respecte les plus hauts standards de qualité et de rigueur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="valeur" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <p>
+                                <strong>Collaboration :</strong> Travailler main dans la main avec nos clients. Nous croyons en un partenariat 
+                                solide, où la coopération et l'écoute sont essentielles pour obtenir des résultats durables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secteur">
+                <h3>Secteur d'activité</h3>
+                <p>
+                    <strong>Braves Man TG</strong> est spécialisé dans les domaines ci-après : 
+                </p>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="secteurs" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <p class="icon" style="font-size: 25px;"><i class="bi bi-graph-up"></i></p>
+                            <h3>L'analyse et la recherche</h3>
+                            <p>
+                                BRAVES MAN TG adopte une approche rigoureuse pour analyser les problèmes complexes 
+                                à travers des outils d'analyse avancés.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="secteurs" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <p class="icon" style="font-size: 25px;"><i class="bi bi-easel"></i></p>
+                            <h3>L'enseignement</h3>
+                            <p>
+                                Nos programmes de formation sur mesure sont conçus pour répondre aux besoins spécifiques 
+                                des entreprises ou des individus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="secteurs" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <p class="icon" style="font-size: 25px;"><i class="bi bi-shield-check"></i></p>
+                            <h3>La résolution des problèmes</h3>
+                            <p>
+                                Nous proposons des solutions sur mesure pour chaque défi, garantissant une transition en 
+                                douceur et l'atteinte des résultats.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center" style="width: 100%;" data-aos="zoom-in-up">
+                        <div class="contactForm">
+                            <h6>Envoyez nous un message</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="name" id="name" placeholder="Votre nom">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="first" id="first" placeholder="Votre prénom">
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <input type="email" name="email" id="email" placeholder="Votre adresse mail">
+                            </div>
+                            <div class="inputbox">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-center" style="width: 100%;" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="coordonneediv">
+                            <h6>Nos coordonées</h6>
+                            <div class="coordons">
+                                <p><i class="bi bi-envelope-fill"></i> contact@bravesmantg.org</p>
+                                <p><i class="bi bi-telephone-fill"></i> +243 854666188</p>
+                                <p><i class="bi bi-geo-alt-fill"></i> Adresse Braves Man TG</p>
+                            </div>
+                            <div class="links d-flex justify-content-center">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <h1>Braves Man TG</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="link d-flex justify-content-end">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-start">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Accueil</li>
+                            <li>A propos</li>
+                            <li>Missions</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-center">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Cercle BRaves MAn Coorporation</li>
+                            <li>KuMeTU</li>
+                            <li>ALLYNEC</li>
+                            <li>NEVER GIVE UP Center</li>
+                            <li>Get Skills Class</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-center">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Profil</li>
+                            <li>My account</li>
+                            <li>Preferences</li>
+                            <li>Purchase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Catalogue</li>
+                            <li>Metier Technicien Informatique</li>
+                            <li>Parcous en Réseaux</li>
+                            <li>Parcours en Programmation</li>
+                            <li>Parcours en Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #012641; box-shadow: 0 0 2px #09052b; padding: 0; margin: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-start">
+                            <p>Copyright&copy; 2024 Braves Man TG. <span style="color: #c9c9c9;">Tout drois réservés</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                            <a href="#" style="text-decoration: none; color: #fff;">
+                                Politique de confidentialité & Condition générales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../asset/script.js"></script>
+</body>
+</html>

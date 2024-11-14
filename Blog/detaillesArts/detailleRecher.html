@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asset/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../dstyle.css">
+    <title>Recherche Article</title>
+</head>
+<body>
+    <div class="process" id="process" style="display: none;">
+        <a href="#" class="fermer"><i class="bi bi-x"></i></a>
+        <div class="content">
+            <h2>Vous nous contactez en tant que :</h2>
+            <div>
+                <button id="personnelBtn">Personnel</button>
+                <button id="entrepriseBtn">Entreprise</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper" id="personnelForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Votre nom, post-nom et prénom">
+                    <label for="name">Nom complet</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="adresse" id="adresse" required placeholder="Votre résidence">
+                    <label for="adresse">Adresse actuelle</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Votre adresse mail">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="num" id="num" required placeholder="Votre numéro de téléphone">
+                    <label for="num">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrit" id="descrit"></textarea>
+                    <label for="descrit">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="wrapper1" id="entrepriseForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="entrepriseformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Nom de l'entreprise">
+                    <label for="name">Entreprise</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Adresse mail de l'entreprise">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="numE" id="numE" required placeholder="Numéro de téléphone">
+                    <label for="numE">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrite" id="descrite"></textarea>
+                    <label for="descrite">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div> 
+
+    <div class="accueil">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <a href="../../index.html"><img src="../../asset/images/brave_man_logo2.png" class="logo" alt="Logo de Brave Man TG" width="90px"></a>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../../index.html#home">Accueil</a></li>
+                    <li><a href="../../Missions/mission.html">Mission</a></li>
+                    <li><a href="../../Services/services.html">Services</a></li>
+                    <li><a href="../../solutions/solution.html">Nos solutions</a></li>
+                    <li><a href="../../Blog/blog.html">Blog</a></li>
+                    <li><a href="../../About/About.html">A propos</a></li>
+                    <div class="cache" id="search">
+                        <li><input type="search" placeholder="Tapez votre recherche..."></li>
+                    </div>
+                    <li>
+                        <a id="Btnsearch" style="color: #fff; background-color: #ff5e00; padding: 8px 12px; border-radius: 50%;" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li><a class="contact" href="#" id="btnJoin">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="banner">
+                    <h2 style="color: #fff; text-align: center;">Les Meilleurs pratiques pour la Recherche en Entreprise</h2>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <section class="details" style="background-color: #011d31; color: #fff;">
+        <div class="container" style="padding: 20px;">
+            <div class="imagecontent">
+                <img src="../../asset/images/recherche.jpg" alt="">
+            </div>
+            <div class="textcontent">
+                <h2>Les Meilleurs pratiques pour la Recherche en Entreprise</h2>
+                <p>
+                    La recherche est un pilier fondamental pour l'innovation et le 
+                    développement. Mais comment les entreprises peuvent-elles mener des 
+                    recherches efficaces ?
+                </p>
+                <p>
+                    La recherche permet aux entreprises de rester compétitives, de comprendre 
+                    les besoins du marché et de prendre des décisions éclairées. Voici 
+                    quelques-unes des meilleures pratiques pour mener des recherches efficaces 
+                    en entreprise :
+                </p>
+                <div>
+                    <h5>1. Définir des Objectifs Clairs</h5>
+                    <p>
+                        Avant de commencer toute recherche, il est crucial de définir des objectifs 
+                        clairs et précis. Cela permet de guider le processus de recherche et d'assurer 
+                        que les efforts sont concentrés sur les questions les plus pertinentes pour 
+                        l'entreprise.
+                    </p>
+                </div>
+                <div>
+                    <h5>2. Choisir les Méthodes de Recherche Appropriées</h5>
+                    <p>
+                        Il existe deux principales méthodes de recherche : <strong>qualitative</strong> 
+                        et <strong>quantitative</strong>. La recherche qualitative explore les perceptions 
+                        et les motivations, tandis que la recherche quantitative se concentre sur les 
+                        données chiffrées et les statistiques. Choisir la méthode appropriée en fonction 
+                        des objectifs de la recherche est essentiel.
+                    </p>
+                </div>
+                <div>
+                    <h5>3. Utiliser des Outils de Gestion des Données</h5>
+                    <p>
+                        La gestion efficace des données est cruciale pour la recherche en entreprise. 
+                        Utiliser des outils de gestion des données comme QuestionPro InsightHub, 
+                        Google Cloud Platform, ou Microsoft Power BI peut aider à organiser, analyser 
+                        et interpréter les données de manière efficace.
+                    </p>
+                </div>
+                <div>
+                    <h5>4. Impliquer les Parties Prenantes</h5>
+                    <p>
+                        Impliquer les parties prenantes tout au long du processus de recherche permet 
+                        de s'assurer que les résultats sont pertinents et utiles. Cela inclut les employés, 
+                        les clients, les partenaires et autres parties prenantes clés.
+                    </p>
+                </div>
+                <div>
+                    <h5>5. Analyser et Interpréter les Données</h5>
+                    <p>
+                        Une fois les données collectées, il est important de les analyser de manière 
+                        rigoureuse. Utiliser des techniques statistiques et des outils d'analyse pour 
+                        interpréter les données et en tirer des conclusions significatives.
+                    </p>
+                </div>
+                <div>
+                    <h5>6. Communiquer les Résultats</h5>
+                    <p>
+                        Les résultats de la recherche doivent être communiqués de manière claire et 
+                        concise aux parties prenantes. Utiliser des rapports, des présentations et des 
+                        visualisations de données pour rendre les résultats accessibles et compréhensibles.
+                    </p>
+                </div>
+                <div>
+                    <h5>7. Mettre en Œuvre les Recommandations</h5>
+                    <p>
+                        La recherche n'est utile que si ses résultats sont mis en œuvre. Développer des 
+                        plans d'action basés sur les recommandations de la recherche et suivre leur mise 
+                        en œuvre pour s'assurer qu'elles produisent les résultats escomptés.
+                    </p>
+                </div>
+                <div>
+                    <h5>8. Évaluer et Ajuster</h5>
+                    <p>
+                        Enfin, il est important d'évaluer l'impact des actions mises en œuvre et d'ajuster 
+                        les stratégies en conséquence. La recherche est un processus continu qui nécessite 
+                        des ajustements réguliers pour rester pertinent et efficace.
+                    </p>
+                </div>
+                <p>
+                    En suivant ces meilleures pratiques, les entreprises peuvent mener des recherches 
+                    efficaces qui soutiennent l'innovation, améliorent la prise de décision et 
+                    renforcent leur compétitivité sur le marché
+                </p>
+            </div>
+            <h6>Braves Man TG / Rédaction <i class="bi bi-pen"></i></h6>
+            <a href="../blog.html" style="text-decoration: none; background-color: #ff5e00; color: #fff; padding: 6px 12px;">
+                Retour au blog
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="texth1 d-flex">
+                        <h1>Braves Man TG</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="link d-flex justify-content-center">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Accueil</li>
+                            <li>A propos</li>
+                            <li>Missions</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Cercle BRaves MAn Coorporation</li>
+                            <li>KuMeTU</li>
+                            <li>ALLYNEC</li>
+                            <li>NEVER GIVE UP Center</li>
+                            <li>Get Skills Class</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Profil</li>
+                            <li>My account</li>
+                            <li>Preferences</li>
+                            <li>Purchase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Catalogue</li>
+                            <li>Metier Technicien Informatique</li>
+                            <li>Parcous en Réseaux</li>
+                            <li>Parcours en Programmation</li>
+                            <li>Parcours en Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #012641; box-shadow: 0 0 2px #09052b; padding: 0; margin: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-start">
+                            <p>Copyright&copy; 2024 Braves Man TG. <span style="color: #c9c9c9;">Tout drois réservés</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-end">
+                            <a href="#" style="text-decoration: none; color: #fff;">
+                                Politique de confidentialité & Condition générales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../asset/script.js"></script>
+</body>
+</html>

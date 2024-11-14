@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="dstyle.css">
+    <title>Braves Man TG | Blog</title>
+</head>
+<body>
+    <div class="process" id="process" style="display: none;">
+        <a href="#" class="fermer"><i class="bi bi-x"></i></a>
+        <div class="content">
+            <h2>Vous nous contactez en tant que :</h2>
+            <div>
+                <button id="personnelBtn">Personnel</button>
+                <button id="entrepriseBtn">Entreprise</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper" id="personnelForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Votre nom, post-nom et prénom">
+                    <label for="name">Nom complet</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="adresse" id="adresse" required placeholder="Votre résidence">
+                    <label for="adresse">Adresse actuelle</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Votre adresse mail">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="num" id="num" required placeholder="Votre numéro de téléphone">
+                    <label for="num">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrit" id="descrit"></textarea>
+                    <label for="descrit">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="wrapper1" id="entrepriseForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="entrepriseformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Nom de l'entreprise">
+                    <label for="name">Entreprise</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Adresse mail de l'entreprise">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="numE" id="numE" required placeholder="Numéro de téléphone">
+                    <label for="numE">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrite" id="descrite"></textarea>
+                    <label for="descrite">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="wrapper2" id="formblog">
+        <div  class="d-flex justify-content-end">
+            <button id="closeformblog">Fermer</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="form-box">
+                <div>
+                    <h4>Formulaire de publication</h4>
+                    <div class="input-box">
+                        <label for="title">Titre</label>
+                        <input type="text" name="title" id="title" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="image">Image</label>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="input-box">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" required></textarea>
+                    </div>
+                </div>
+                <button class="sub" type="submit">Publier</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="accueil">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <a href="../index.html"><img src="../asset/images/brave_man_logo2.png" class="logo" alt="Logo de Brave Man TG" width="90px"></a>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html#home">Accueil</a></li>
+                    <li><a href="../Missions/mission.html">Mission</a></li>
+                    <li><a href="../Services/services.html">Services</a></li>
+                    <li><a href="../solutions/solution.html">Nos solutions</a></li>
+                    <li><a href="../Blog/blog.html">Blog</a></li>
+                    <li><a href="../About/About.html">A propos</a></li>
+                    <div class="cache" id="search">
+                        <li><input type="search" placeholder="Tapez votre recherche..."></li>
+                    </div>
+                    <li>
+                        <a id="Btnsearch" style="color: #fff; background-color: #ff5e00; padding: 8px 12px; border-radius: 50%;" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li><a class="contact" href="#" id="btnJoin">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="banner fade-in" style="text-align: center;">
+                    <h1 class="typing">Bienvenu sur notre blog</h1>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <section class="articles">
+        <button class="iconblog d-flex justify-content-start" onclick="toggleDiv()">
+            <i class="bi bi-house-fill">
+            </i>
+        </button>
+        <div class="row">
+            <div class="col-1 col-lg-3">
+                <div class="voletgauche" style="text-align: center;">
+                    <div class="inputbox">
+                        <input type="email" name="email" id="email" placeholder="Recherche...">
+                        <a href="#"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div class="row">
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Articles recents</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Aujourd'hui</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Hier</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Cette semaine</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>La semaine dernière</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Ce mois</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Le mois dernier</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>Cette année</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div>
+                                        <button>L'année dernière</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="socialmedia d-flex justify-content-center">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-twitter"></i></a>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#"><i class="bi bi-youtube"></i></a>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arts col-11 col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/analyse_donnees.jpg" alt="" width="100%">
+                            <div>
+                                <h5>L'importance de l'Analyse de données dans les Entreprises</h5>
+                                <p class="truncate-multiline">
+                                    Dans un monde de plus en plus axé sur les données, l'analyse 
+                                    de données est devenue un outil essentiel pour les entreprises 
+                                    de toutes tailles. Mais pourquoi est-elle si crucial ?
+                                </p>
+                                <a href="detaillesArts/detailleAna.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/recherche.jpg" alt="" width="100%">
+                            <div>
+                                <h5>Les Meilleurs pratiques pour la recherche en Entreprise</h5>
+                                <p class="truncate-multiline">
+                                    La recherche est un pilier fondamental pour l'innovation 
+                                    et le développement. Mais comment les entreprises 
+                                    peuvent-elles mener des recherches efficaces ?
+                                </p>
+                                <a href="detaillesArts/detailleRecher.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/formation.jpg" alt="" width="100%">
+                            <div>
+                                <h5>L'Enseignement et la formation : Clés du succès en Entreprise</h5>
+                                <p class="truncate-multiline">
+                                    Dans un environnement en constante évolution, la formation
+                                    continue est essentielle pour le succès des entreprises et 
+                                    de leurs employés
+                                </p>
+                                <a href="detaillesArts/detailleEns.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/tech.jpg" alt="" width="100%">
+                            <div>
+                                <h5>L'Impact de la Transformation Numérique sur les Entreprise</h5>
+                                <p class="truncate-multiline">
+                                    La transformation numérique est devenue un impératif pour les entreprises 
+                                    modernes. Elle implique l'intégration des technologies numériques dans 
+                                    tous les aspects de l'entreprise, modifiant fondamentalement la manière 
+                                    dont les entreprises opèrent et apportent de la valeur à leurs clients.
+                                </p>
+                                <a href="detaillesArts/detailleNum.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/robot.jpg" alt="" width="100%">
+                            <div>
+                                <h5>Les Tendances Technologiques à Surveiller en 2025</h5>
+                                <p class="truncate-multiline">
+                                    L'année 2025 promet d'être une période de transformations 
+                                    technologiques majeures qui redéfiniront notre manière de 
+                                    vivre et de travailler.
+                                </p>
+                                <a href="detaillesArts/detailleTen.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/commerce.jpg" alt="" width="100%">
+                            <div>
+                                <h5>L'Évolution du Commerce Électronique en 2025</h5>
+                                <p class="truncate-multiline">
+                                    Le commerce électronique continue de croître et d'évoluer, 
+                                    offrant de nouvelles opportunités et défis pour les 
+                                    entreprises. Voici un aperçu des tendances à surveiller en 
+                                    2025 :
+                                </p>
+                                <a href="detaillesArts/detailleCom.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/cybersecurite.jpg" alt="" width="100%">
+                            <div>
+                                <h5>La Cybersécurité : Protéger les Données de Votre Entreprise</h5>
+                                <p class="truncate-multiline">
+                                    Avec l'augmentation des cyberattaques, la cybersécurité est 
+                                    devenue une priorité absolue pour les entreprises de toutes 
+                                    tailles. Protéger les données sensibles et assurer la 
+                                    continuité des activités sont des enjeux cruciaux dans le 
+                                    monde numérique d'aujourd'hui. Voici un aperçu des principales 
+                                    menaces et des meilleures pratiques pour renforcer la 
+                                    cybersécurité de votre entreprise.
+                                </p>
+                                <a href="detaillesArts/detaillecyb.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/IA.png" alt="" width="100%">
+                            <div>
+                                <h5>L'Impact de l'Intelligence Artificielle sur le Marché</h5>
+                                <p class="truncate-multiline">
+                                    L'intelligence artificielle (IA) transforme rapidement le 
+                                    marché du travail, apportant à la fois des opportunités et 
+                                    des défis. Voici un aperçu de son impact :
+                                </p>
+                                <a href="detaillesArts/detailleIA.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/innovation.png" alt="" width="100%">
+                            <div>
+                                <h5>L'Importance de l'Innovation dans les Entreprises</h5>
+                                <p class="truncate-multiline">
+                                    L'innovation est un moteur clé de la croissance et de la 
+                                    compétitivité des entreprises. Elle permet aux entreprises 
+                                    de se différencier sur le marché, de répondre aux besoins 
+                                    changeants des clients et de saisir de nouvelles opportunités. 
+                                    Voici pourquoi l'innovation est cruciale et comment les 
+                                    entreprises peuvent l'encourager et la gérer efficacement.
+                                </p>
+                                <a href="detaillesArts/detailleInn.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/sociaux.jpg" alt="" width="100%">
+                            <div>
+                                <h5>L'Impact des Réseaux Sociaux sur les Entreprises</h5>
+                                <p class="truncate-multiline">
+                                    Les réseaux sociaux jouent un rôle crucial dans la communication 
+                                    et le marketing des entreprises modernes. Ils offrent une 
+                                    plateforme pour interagir avec les clients, promouvoir des produits 
+                                    et services, et renforcer la présence en ligne. Voici un aperçu de 
+                                    leur impact et des stratégies efficaces pour les utiliser.
+                                </p>
+                                <a href="detaillesArts/detailleImp.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <img src="../asset/images/gestionP.jpg" alt="" width="100%">
+                            <div>
+                                <h5>La Gestion de Projet Agile : Meilleures Pratiques</h5>
+                                <p class="truncate-multiline">
+                                    La gestion de projet agile est devenue une méthode populaire 
+                                    pour gérer les projets de manière flexible et efficace.
+                                </p>
+                                <a href="detaillesArts/detaillegsp.html">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box d-none">
+                            <img src="" alt="" width="100%">
+                            <div>
+                                <h5></h5>
+                                <p class="truncate-multiline">
+                                    
+                                </p>
+                                <a href="">Voir l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <button id="formblogbtn">Publier un article</button>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="texth1 d-flex">
+                        <h1>Braves Man TG</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="link d-flex justify-content-center">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Accueil</li>
+                            <li>A propos</li>
+                            <li>Missions</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Cercle BRaves MAn Coorporation</li>
+                            <li>KuMeTU</li>
+                            <li>ALLYNEC</li>
+                            <li>NEVER GIVE UP Center</li>
+                            <li>Get Skills Class</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Profil</li>
+                            <li>My account</li>
+                            <li>Preferences</li>
+                            <li>Purchase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Catalogue</li>
+                            <li>Metier Technicien Informatique</li>
+                            <li>Parcous en Réseaux</li>
+                            <li>Parcours en Programmation</li>
+                            <li>Parcours en Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #012641; box-shadow: 0 0 2px #09052b; padding: 0; margin: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-start">
+                            <p>Copyright&copy; 2024 Braves Man TG. <span style="color: #c9c9c9;">Tout drois réservés</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-end">
+                            <a href="#" style="text-decoration: none; color: #fff;">
+                                Politique de confidentialité & Condition générales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../asset/script.js"></script>
+</body>
+</html>

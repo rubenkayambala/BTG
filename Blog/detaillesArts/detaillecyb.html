@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asset/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/icons-1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../dstyle.css">
+    <title>Cybersécurité Article</title>
+</head>
+<body>
+    <div class="process" id="process" style="display: none;">
+        <a href="#" class="fermer"><i class="bi bi-x"></i></a>
+        <div class="content">
+            <h2>Vous nous contactez en tant que :</h2>
+            <div>
+                <button id="personnelBtn">Personnel</button>
+                <button id="entrepriseBtn">Entreprise</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper" id="personnelForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="personnalformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Votre nom, post-nom et prénom">
+                    <label for="name">Nom complet</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="adresse" id="adresse" required placeholder="Votre résidence">
+                    <label for="adresse">Adresse actuelle</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Votre adresse mail">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="num" id="num" required placeholder="Votre numéro de téléphone">
+                    <label for="num">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrit" id="descrit"></textarea>
+                    <label for="descrit">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="wrapper1" id="entrepriseForm" style="display: none;">
+        <div class="form-box" id="myForm">
+            <div id="entrepriseformclose" class="d-flex w-100 justify-content-end">
+                <i class="bi bi-x"></i>
+            </div>
+            <h2>Remplissez ce formulaire</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Nom de l'entreprise">
+                    <label for="name">Entreprise</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Adresse mail de l'entreprise">
+                    <label for="email">Adresse Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="numE" id="numE" required placeholder="Numéro de téléphone">
+                    <label for="numE">Téléphone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="descrite" id="descrite"></textarea>
+                    <label for="descrite">Décrivez votre demande</label>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </div> 
+
+    <div class="accueil">
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <a href="../../index.html"><img src="../../asset/images/brave_man_logo2.png" class="logo" alt="Logo de Brave Man TG" width="90px"></a>
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../../index.html#home">Accueil</a></li>
+                    <li><a href="../../Missions/mission.html">Mission</a></li>
+                    <li><a href="../../Services/services.html">Services</a></li>
+                    <li><a href="../../solutions/solution.html">Nos solutions</a></li>
+                    <li><a href="../../Blog/blog.html">Blog</a></li>
+                    <li><a href="../../About/About.html">A propos</a></li>
+                    <div class="cache" id="search">
+                        <li><input type="search" placeholder="Tapez votre recherche..."></li>
+                    </div>
+                    <li>
+                        <a id="Btnsearch" style="color: #fff; background-color: #ff5e00; padding: 8px 12px; border-radius: 50%;" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li><a class="contact" href="#" id="btnJoin">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="banner">
+                    <h2 style="color: #fff; text-align: center;">La Cybersécurité : Protéger les Données de Votre Entreprise</h2>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <section class="details" style="background-color: #011d31; color: #fff;">
+        <div class="container" style="padding: 20px;">
+            <div class="imagecontent">
+                <img src="../../asset/images/cybersecurite.jpg" alt="">
+            </div>
+            <div class="textcontent">
+                <h2>La Cybersécurité : Protéger les Données de Votre Entreprise</h2>
+                <p>
+                    Avec l'augmentation des cyberattaques, la cybersécurité est 
+                    devenue une priorité absolue pour les entreprises de toutes 
+                    tailles. Protéger les données sensibles et assurer la 
+                    continuité des activités sont des enjeux cruciaux dans le 
+                    monde numérique d'aujourd'hui. Voici un aperçu des principales 
+                    menaces et des meilleures pratiques pour renforcer la 
+                    cybersécurité de votre entreprise.
+                </p>
+                <div>
+                    <h5>1. Principales Menaces en Cybersécurité</h5>
+                    <ul>
+                        <li>
+                            <strong>Phishing : </strong>Les attaques de phishing impliquent l'envoi 
+                            de courriels frauduleux pour inciter les destinataires à divulguer des 
+                            informations sensibles, telles que des mots de passe ou des numéros de 
+                            carte de crédit.
+                        </li>
+                        <li>
+                            <strong>Ransomware : </strong>Les ransomwares sont des logiciels 
+                            malveillants qui chiffrent les données de l'entreprise et exigent une 
+                            rançon pour les déchiffrer.
+                        </li>
+                        <li>
+                            <strong>Attaques DDoS : </strong>Les attaques par déni de service 
+                            distribué (DDoS) visent à rendre un service en ligne indisponible en le 
+                            submergeant de trafic provenant de multiples sources.
+                        </li>
+                        <li>
+                            <strong>Malware : </strong>Les logiciels malveillants, ou malware, 
+                            incluent les virus, les chevaux de Troie et les logiciels espions, qui 
+                            peuvent endommager les systèmes ou voler des informations.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>2. Meilleures Pratiques pour la Cybersécurité</h5>
+                    <ul>
+                        <li>
+                            <strong>Formation des Employés : </strong>Sensibiliser les employés aux 
+                            menaces de cybersécurité et leur fournir une formation régulière sur les 
+                            meilleures pratiques, telles que la reconnaissance des courriels de 
+                            phishing et l'utilisation de mots de passe forts.
+                        </li>
+                        <li>
+                            <strong>Utilisation de Logiciels de Sécurité : </strong>Installer et 
+                            maintenir à jour des logiciels de sécurité, tels que les antivirus, les 
+                            pare-feu et les systèmes de détection d'intrusion.
+                        </li>
+                        <li>
+                            <strong>Sauvegarde Régulière des Données : </strong>Effectuer des sauvegardes 
+                            régulières des données critiques et les stocker dans des emplacements sécurisés 
+                            pour assurer la récupération en cas d'attaque.
+                        </li>
+                        <li>
+                            <strong>Authentification à Deux Facteurs (2FA) : </strong>Mettre en œuvre 
+                            l'authentification à deux facteurs pour ajouter une couche supplémentaire de 
+                            sécurité lors de la connexion aux systèmes et aux applications.
+                        </li>
+                        <li>
+                            <strong>Gestion des Accès : </strong>Limiter l'accès aux données sensibles aux 
+                            seuls employés qui en ont besoin pour leur travail et utiliser des contrôles 
+                            d'accès basés sur les rôles.
+                        </li>
+                        <li>
+                            <strong>Surveillance et Audit : </strong>Mettre en place des systèmes de 
+                            surveillance pour détecter les activités suspectes et effectuer des audits 
+                            réguliers de la sécurité pour identifier et corriger les vulnérabilités.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>3. Etudes de Cas</h5>
+                    <ul>
+                        <li>
+                            <strong>Target : </strong>En 2013, Target a subi une violation de données massive 
+                            qui a compromis les informations de carte de crédit de millions de clients. 
+                            L'incident a mis en évidence l'importance de la surveillance continue et de la 
+                            réponse rapide aux incidents de sécurité.
+                        </li>
+                        <li>
+                            <strong>Maersk : </strong>En 2017, Maersk a été victime de l'attaque NotPetya, qui 
+                            a paralysé ses opérations mondiales. L'entreprise a appris l'importance des 
+                            sauvegardes régulières et de la résilience des systèmes.
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    La cybersécurité est essentielle pour protéger les données sensibles et assurer la continuité des 
+                    activités de votre entreprise. En mettant en œuvre des mesures de sécurité robustes et en sensibilisant 
+                    les employés aux menaces, les entreprises peuvent réduire les risques de cyberattaques et renforcer 
+                    leur résilience face aux incidents de sécurité.
+                </p>
+            </div>
+            <h6>Braves Man TG / Rédaction <i class="bi bi-pen"></i></h6>
+            <a href="../blog.html" style="text-decoration: none; background-color: #ff5e00; color: #fff; padding: 6px 12px;">
+                Retour au blog
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="texth1 d-flex">
+                        <h1>Braves Man TG</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="link d-flex justify-content-center">
+                        <ul class="d-flex">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Accueil</li>
+                            <li>A propos</li>
+                            <li>Missions</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Cercle BRaves MAn Coorporation</li>
+                            <li>KuMeTU</li>
+                            <li>ALLYNEC</li>
+                            <li>NEVER GIVE UP Center</li>
+                            <li>Get Skills Class</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Braves Man TG</li>
+                            <li>Profil</li>
+                            <li>My account</li>
+                            <li>Preferences</li>
+                            <li>Purchase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex">
+                        <ul>
+                            <li style="font-size: 22px; font-weight: bold;">Catalogue</li>
+                            <li>Metier Technicien Informatique</li>
+                            <li>Parcous en Réseaux</li>
+                            <li>Parcours en Programmation</li>
+                            <li>Parcours en Gestion des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #012641; box-shadow: 0 0 2px #09052b; padding: 0; margin: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-start">
+                            <p>Copyright&copy; 2024 Braves Man TG. <span style="color: #c9c9c9;">Tout drois réservés</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text d-flex justify-content-end">
+                            <a href="#" style="text-decoration: none; color: #fff;">
+                                Politique de confidentialité & Condition générales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../asset/script.js"></script>
+</body>
+</html>
